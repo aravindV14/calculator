@@ -1,0 +1,15 @@
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: |
+      echo "compiling Calculatormain.java...."
+      mkdir out
+      javac -d out Calcultormain.java
+      echo "Running the java app..."
+      cd out
+      java Calculatormain
+    displayName: 'Compile and Run Java App'
