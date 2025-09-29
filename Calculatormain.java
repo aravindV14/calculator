@@ -52,6 +52,7 @@ public class Calculatormain {
 
             default:
                 System.out.println("Invalid operator!");
+                System.out.println("just to check the code");
                 break;
         }
 
